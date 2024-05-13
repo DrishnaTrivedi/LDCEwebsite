@@ -65,7 +65,7 @@ body {
 nav {
   position: absolute;
   top: 0px;
-  z-index: 230;
+  z-index: 100;
   overflow: visible;
   width: 100%;
   color: white;
@@ -99,8 +99,8 @@ nav {
 
 .navbar-links li a:hover {
   color: #e4f9ff;
-  border-bottom: 2px solid rgb(59, 180, 251);
-  background-color: #0b3558;
+  /* border-bottom: 2px solid rgb(59, 180, 251); */
+  /* background-color: #0b3558; */
 }
 
 .navbar-links a {
@@ -120,14 +120,6 @@ nav {
 .navbar-links .active {
   color: rgb(59, 180, 251);
   border-bottom: 2px solid rgb(59, 180, 251);
-}
-header.scrolled{
-  background-color: black;
-  /* opacity: 0.9; */
- position: fixed;
- top: 10px;
- border-radius: 30px;
- transition: color 0.4s ease;
 }
 
 .hero {
@@ -350,69 +342,33 @@ header.scrolled{
   text-decoration: none;
 }
 
-.navbar-links {
-  padding-top: 50px;
-  /* Adjust according to your design */
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.navbar-links ul{
-  height: 50px;
-}
-.navbar-links li {
-  padding: 10px 20px;
-}
-
-.navbar-links li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.navbar-links li a:hover {
-  color: lightblue;
-}
-.menubtn{
-  display: none;
-}
-
 /* Default styles for navigation bar */
 /* Add your existing styles here */
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
-  .menubtn{
-    display: block;
-    font-size: 30px;
-    cursor: pointer;
-    position: fixed;
-    top: 1;
-    right: 0;
-  }
-  .navbar-links li a{
-    padding: 0px;
-  }
-  .navbar-links ul li{
-    padding: 0px 0px;
+
+  /* Adjustments for smaller screens */
+  .top-nav {
+    flex-direction: column;
+    /* Stack links vertically */
+    align-items: flex-start;
+    /* Align links to the left */
   }
 
-.navbar-links ul{
-  position:fixed;
-  top: 2;
-  right: 0;
-  background: black;
-  opacity: 0.75;
-  height:55vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
- overflow: hidden;
-}
-.navbar-links ul li a {
-  color:white;
-  
-}
+  .top-nav a {
+    margin-bottom: 10px;
+    /* Add some spacing between links */
+  }
+
+  .mid-nav {
+    text-align: center;
+    /* Center the logo and institution name*/
+  } 
+
+  .navbar-links {
+    display: none;
+    /* Hide the main navigation links */
   }
 
   .navbar-links.active {
@@ -436,8 +392,7 @@ header.scrolled{
     /* Ensure it's above other elements */
   }
 
-
-/*   .navbar-links li {
+  .navbar-links li {
     margin-bottom: 10px;
     /* Add spacing between links */
   }
@@ -471,7 +426,7 @@ header.scrolled{
     z-index: 1000;
     /* Ensure sidebar appears above other content */
   }
-} */
+}
 
 @media only screen and (max-width: 768) {
   .mobilecolumn {
@@ -524,11 +479,99 @@ header.scrolled{
   }
 }
 
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .mrindia {
     top: 0;
     /* Ensure sidebar appears above other content */
   }
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+}
+
+.navbar-links {
+  padding-top: 50px;
+  /* Adjust according to your design */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  padding: 10px 20px;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-links li a:hover {
+  color: lightblue;
+}
+
+.dropdown-content {
+
+  display: none;
+  position: absolute;
+  top: 90%;
+  background-color: #f1f1f1;
+  color: #c31111;
+  min-width: 505px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown-content a {
+  color:black!important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: #cc5252 !important;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: grid;
+grid-template-columns: repeat(2 , 300px);
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+/* .sec1{
+display: grid;
+grid-template-columns: repeat(2 , 200px);
 } */
 
+#intake{
+  color: white;
+  background-color: black;
+  padding: 0px 10px;
+  /* margin-left: 10px; */
+  /* margin-top: 20px;
+   */
+   position: relative;
+   top: 5px;
 
+}
+.sec1:hover{
+border:  1px solid orangered;
+/* display: inline; */
+width: fit-content;
+margin: 5px;
+border-radius: 0px 0px 15px 15px;
+
+}

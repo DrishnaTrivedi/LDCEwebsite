@@ -1,144 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="img/ldce-logo-png.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LDCE</title>
+  </head>
+  <body>
+    <div class="hero">
+      <div
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+        id="carouselExample"
+      >
+        <div class="carousel-inner">
+<nav class="sidebar">
+    <div class="sidebar-toggle" onclick="toggleSidebar()">
+      <!-- <div class="sidebar-icon">
+        <img src="./img/menu.png" alt="sidebar image" height="10%"  class="mrindia">
+      </div> -->
+    <i class="fas fa-bars"></i>
 
-<head>
-  <link rel="shortcut icon" href="img/ldce-logo-png.png" type="image/x-icon" />
-  <link rel="stylesheet" href="style.css" />
-  <!-- Bootstrap css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <!-- Bootstrap JS -->
-  <script src="https://kit.fontawesome.com/5e263150a4.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LDCE</title>
-  
-</head>
+            <div class="top-nav text-right">
+              <a href="https://study.gujarat.gov.in/Home/University"
+                >STUDY IN GUJARAT</a
+              >
+              | <a href="http://grievance.ldce.ac.in/"> GRIEVANCE </a> |
+              <a href="https://ldce.ac.in/sitemap">SITEMAP</a> |
+              <a href="https://ldce.ac.in/student-section/notice-board">
+                STUDENT SECTION</a
+              >
+              |
+              <a href="https://ldce.ac.in/contact">CONTACT</a>
+            </div>
+            <div class="mid-nav">
+              <div class="container mt-2 mb-2 pt-0 pb-0">
+                <div class="row">
+                  <div
+                    class="col d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <img
+                      src="img/ldce-logo-png.png"
+                      width="100px"
+                      alt="ldce-logo"
+                      id="ldce-logo"
+                      class="mrindia"
+                    />
 
-<body>
-  <div class="hero">
-    <div class="carousel slide carousel-fade" data-ride="carousel" id="carouselExample">
-      <div class="carousel-inner">
-        <nav class="sidebar ">
-
-          
-
-          <div class="top-nav text-right">
-            <a href="https://study.gujarat.gov.in/Home/University">STUDY IN GUJARAT</a>
-            | <a href="http://grievance.ldce.ac.in/"> GRIEVANCE </a> |
-            <a href="https://ldce.ac.in/sitemap">SITEMAP</a> |
-            <a href="https://ldce.ac.in/student-section/notice-board">
-              STUDENT SECTION</a>
-            |
-            <a href="https://ldce.ac.in/contact">CONTACT</a>
-          </div>
-          <div class="mid-nav">
-            <div class="container mt-2 mb-2 pt-0 pb-0">
-              <div class="row">
-                <div class="col d-flex align-items-center justify-content-start gap-2">
-                  <img src="img/ldce-logo-png.png" width="100px" alt="ldce-logo" id="ldce-logo" class="mrindia" />
-
-                  <h3>L.D. College of Engineering</h3>
+                    <h3>L.D. College of Engineering</h3>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="bottom-nav ">
-            <div class="container mt-0 pt-0 pb-0">
-              <div class="row">
-                <div class="col">
-                  <header>
-                    <div class="navbar-links"  >
-                      <ul  id="menuList"  class="d-flex justify-content-between align-items-center p-0 m-0">
-                        <div class="icon menubtn"><i class=" bar fa-solid fa-bars" onclick="toggleMenu()"></i></div>
+            <div class="bottom-nav">
+              <div class="container mt-0 pt-0 pb-0">
+                <div class="row">
+                  <div class="col">
+                    <div class="navbar-links">
+                      <ul 
+                        class="d-flex justify-content-between align-items-center p-0 m-0 "
+                      >
                         <li><a href="#" class="active">Home</a></li>
-                        <li>
-                          <a href="https://ldce.ac.in/about/institute">About<span><img src="img/down.png"
-                                alt="" /></span></a>
+                        <li class = "dropbtn dropdown">
+                          <a href="https://ldce.ac.in/about/institute"
+                            >About<span><img src="img/down.png" alt="" /></span
+                          ></a>
+                          <div class="dropdown-content">
+                            <div class="sec1">
+                            <span id = "intake">Intake and Admission</span> <br>
+                            <a href="#" >BE admission and courses</a>
+                            <a href="#">PDDC Courses</a>
+                            <a href="#">PG admission and courses</a>
+                          </div>
+                          <div class="sec1">
+                            <span id = "intake">Intake and Admission</span> <br>
+                            <a href="#" >BE admission and courses</a>
+                            <a href="#">PDDC Courses</a>
+                            <a href="#">PG admission and courses</a>
+                          </div>
+                          </div>
+                        </li>
+                        <li class = "dropbtn dropdown">
+                          <a
+                            href="https://ldce.ac.in/admissions/academiccalender"
+                            >Acedemics<span><img src="img/down.png" alt="" /></span></a
+                          >
+                          <div class="dropdown-content">
+                            <div class="sec1">
+                            <span id = "intake">Intake and Admission</span> <br>
+                            <a href="#" >BE admission and courses</a>
+                            <a href="#">PDDC Courses</a>
+                            <a href="#">PG admission and courses</a>
+                          </div>
+                          <div class="sec1">
+                            <span id = "intake">Intake and Admission</span> <br>
+                            <a href="#" >BE admission and courses</a>
+                            <a href="#">PDDC Courses</a>
+                            <a href="#">PG admission and courses</a>
+                          </div>
+                          </div>
+                        </li>
+                        <li class = "dropbtn dropdown">
+                          <a href="https://ldce.ac.in/departments"
+                            >Departments<span><img src="img/down.png" alt="" /></a
+                          ></span>
+                          <div class="dropdown-content">
+                            <div class="sec1">
+                            <span id = "intake">Intake and Admission</span> <br>
+                            <a href="#" >BE admission and courses</a>
+                            <a href="#">PDDC Courses</a>
+                            <a href="#">PG admission and courses</a>
+                          </div>
+                          <div class="sec1">
+                            <span id = "intake">Intake and Admission</span> <br>
+                            <a href="#" >BE admission and courses</a>
+                            <a href="#">PDDC Courses</a>
+                            <a href="#">PG admission and courses</a>
+                          </div>
+                          </div>
+                        </li>
+                        <li class = "dropbtn dropdown">
+                          <a href="https://ldce.ac.in/campus-life"
+                            >Campus Life<span><img src="img/down.png" alt="" /></a
+                          ></span>
+                          <div class="dropdown-content">
+                            <div class="sec1">
+                            <span id = "intake">Intake and Admission</span> <br>
+                            <a href="#" >BE admission and courses</a>
+                            <a href="#">PDDC Courses</a>
+                            <a href="#">PG admission and courses</a>
+                          </div>
+                          <div class="sec1">
+                            <span id = "intake">Intake and Admission</span> <br>
+                            <a href="#" >BE admission and courses</a>
+                            <a href="#">PDDC Courses</a>
+                            <a href="#">PG admission and courses</a>
+                          </div>
+                          </div>
                         </li>
                         <li>
-                          <a href="https://ldce.ac.in/admissions/academiccalender">Acedemics<span><img
-                                src="img/down.png" alt="" /></span></a>
-                        </li>
-                        <li>
-                          <a href="https://ldce.ac.in/departments">Departments<span><img src="img/down.png"
-                                alt="" /></a></span>
-                        </li>
-                        <li>
-                          <a href="https://ldce.ac.in/campus-life">Campus Life<span><img src="img/down.png"
-                                alt="" /></a></span>
-                        </li>
-                        <li>
-                          <a href="https://ldce.ac.in/placement-cell">Placements</a>
+                          <a href="https://ldce.ac.in/placement-cell"
+                            >Placements</a
+                          >
                         </li>
                         <li>
                           <a href="https://ldce.ac.in/circular">Circular</a>
                         </li>
                         <li>
-                          <a href="https://ldce.ac.in">More<span><img src="img/down.png" alt="" /></span></a>
+                          <a href="https://ldce.ac.in">More<span><img src="img/down.png" alt="" /></span></a
+                          >
                         </li>
-                    </ul>
-                  </header>
-                </div> 
-               </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </nav>
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/herobg.jpg" alt="First slide" />
           </div>
-        </nav>
-
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="img/herobg.jpg" alt="First slide" />
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/LDCE3.png" alt="Second slide" />
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/student.jpg" alt="Third slide" />
-        </div>
-<!--         <div class="unit-blocks mobilecolumn ">
-          <div class="block">
-            <a href="#news">
-              <img src="img/news-icon.png" alt="news" />
-              <h4>NEWS</h4>
-            </a>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/LDCE3.png" alt="Second slide" />
           </div>
-          <div class="block block-alt">
-            <a href="https://ldce.ac.in/ssip">
-              <img src="img/startup.png" alt="startup" />
-              <h4>STARTUPS</h4>
-            </a>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="img/student.jpg"
+              alt="Third slide"
+            />
           </div>
-          <div class="block">
-            <a href="#placement" class="block3">
-              <img src="img/placement.png" alt="placement" />
-              <h4>PLACEMENTS</h4>
-            </a>
-          </div>
-          <div class="block block-alt">
-            <a href="#event">
-              <img src="img/event.png" alt="event" />
-              <h4>EVENTS</h4>
-            </a>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </a> -->
           
         <a
           class="carousel-control-prev"
@@ -190,349 +254,500 @@
 
     </div>
     </div>
-  </div>
-  <div class="imp-announcment">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-12">
-          <div class="announcements">
-            <h1 class="title">IMPORTANT ANNOUNCEMENTS</h1>
-            <ul>
-              <li>
-                <img src="img/right-arrow.png" alt="arrow" />
-                <a target="_blank"
-                  href="https://ldce.ac.in/upload/pdf/news/2023/ldce-is-delighted-to-share-that-nba-has-accredited-computer-engineering-and-rubber-technology-program-for-three-years-upto-june-2026-p2afXy.jpeg">
-                  Two B.E. programs- Rubber Technology and Computer
-                  Engineering accredited by NBA for three years
-                </a>
-              </li>
-              <li>
-                <img src="img/right-arrow.png" alt="arrow" />
-                <a target="_blank"
-                  href="https://ldce.ac.in/upload/pdf/news/2023/ldce-is-delighted-to-share-that-nba-has-accredited-computer-engineering-and-rubber-technology-program-for-three-years-upto-june-2026-p2afXy.jpeg">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Praesent bibendum ultrices nisl
-                </a>
-              </li>
-              <li>
-                <img src="img/right-arrow.png" alt="arrow" />
-                <a target="_blank"
-                  href="https://ldce.ac.in/upload/pdf/news/2023/ldce-is-delighted-to-share-that-nba-has-accredited-computer-engineering-and-rubber-technology-program-for-three-years-upto-june-2026-p2afXy.jpeg">
-                  Two B.E. programs- Rubber Technology and Computer
-                  Engineering accredited by NBA for three years
-                </a>
-              </li>
-            </ul>
-            <a class="btn btn-danger rounded-0 more-btn" target="_blank" href="https://ldce.ac.in">
-              More <img src="img/back.png" alt="arrow" />
-            </a>
+    <div class="imp-announcment">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-12">
+            <div class="announcements">
+              <h1 class="title">IMPORTANT ANNOUNCEMENTS</h1>
+              <ul>
+                <li>
+                  <img src="img/right-arrow.png" alt="arrow" />
+                  <a
+                    target="_blank"
+                    href="https://ldce.ac.in/upload/pdf/news/2023/ldce-is-delighted-to-share-that-nba-has-accredited-computer-engineering-and-rubber-technology-program-for-three-years-upto-june-2026-p2afXy.jpeg"
+                  >
+                    Two B.E. programs- Rubber Technology and Computer
+                    Engineering accredited by NBA for three years
+                  </a>
+                </li>
+                <li>
+                  <img src="img/right-arrow.png" alt="arrow" />
+                  <a
+                    target="_blank"
+                    href="https://ldce.ac.in/upload/pdf/news/2023/ldce-is-delighted-to-share-that-nba-has-accredited-computer-engineering-and-rubber-technology-program-for-three-years-upto-june-2026-p2afXy.jpeg"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent bibendum ultrices nisl
+                  </a>
+                </li>
+                <li>
+                  <img src="img/right-arrow.png" alt="arrow" />
+                  <a
+                    target="_blank"
+                    href="https://ldce.ac.in/upload/pdf/news/2023/ldce-is-delighted-to-share-that-nba-has-accredited-computer-engineering-and-rubber-technology-program-for-three-years-upto-june-2026-p2afXy.jpeg"
+                  >
+                    Two B.E. programs- Rubber Technology and Computer
+                    Engineering accredited by NBA for three years
+                  </a>
+                </li>
+              </ul>
+              <a
+                class="btn btn-danger rounded-0 more-btn"
+                target="_blank"
+                href="https://ldce.ac.in"
+              >
+                More <img src="img/back.png" alt="arrow" />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="about-ldce">
+              <h1 class="title">ABOUT LDCE</h1>
+              <p>
+                L. D. College of Engineering (LDCE), is a premier
+                government engineering institute in Gujarat set with the
+                objectives of imparting higher education, research and training
+                in various fields of engineering & technology.
+              </p>
+              <a
+                class="btn-sm btn-danger rounded-0 read-more-btn"
+                href="https://ldce.ac.in/about/institute"
+                target="_blank"
+              >
+                Read more
+              </a>
+            </div>
           </div>
         </div>
-        <div class="col-md-4 col-12">
-          <div class="about-ldce">
-            <h1 class="title">ABOUT LDCE</h1>
+      </div>
+    </div>
+    <div class="acedemic-unit">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="title">ACEDEMIC UNITS</h1>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-between gy-sm-0 gy-1">
+          <div
+            class="col-md-3 col-sm-4 ac-units"
+            onclick="location.href='https://ldce.ac.in/departments'"
+          >
+            <img src="img/department.png" alt="department" />
+            <h4>DEPARTMENTS</h4>
+          </div>
+          <div
+            class="col-md-3 col-sm-4 ac-units"
+            onclick="location.href='https://ldce.ac.in'"
+          >
+            <img src="img/cap.png" alt="excellence" />
+            <h4>CENTER OF EXCELLENCE</h4>
+          </div>
+          <div
+            class="col-md-3 col-sm-4 ac-units"
+            onclick="location.href='https://ldce.ac.in/achievements'"
+          >
+            <img src="img/medal.png" alt="ACHIVEMENTS" />
+            <h4>ACHIVEMENTS</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="latest-news" id="news">
+      <div class="container">
+        <div class="row">
+          <div class="col d-inline-flex justify-content-start align-items-start gap-3">
+            <h1 class="title">LATEST NEWS</h1>
+            <a
+                  class="btn-sm btn-danger"
+                  href="https:ldce.ac.in/news"
+                  >All News</a
+                >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card rounded-0 border-0">
+              <img
+                src="img/NEWS.jpeg"
+                class="card-img-top rounded-0"
+                alt="news image"
+              />
+              <div class="card-body">
+                <p class="card-subtitle text-muted">16 des 2023</p>
+                <h6 class="card-title text-justify">
+                  Inauguration of upgraded Library Facilities on 15 December
+                  2023
+                </h6>
+                <a
+                  class="btn-sm btn-danger rounded-0"
+                  href="https:ldce.ac.in/news"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card rounded-0 border-0">
+              <img
+                src="img/NEWS.jpeg"
+                class="card-img-top rounded-0"
+                alt="news image"
+              />
+              <div class="card-body">
+                <p class="card-subtitle text-muted">16 des 2023</p>
+                <h6 class="card-title text-justify">
+                  Inauguration of upgraded Library Facilities on 15 December
+                  2023
+                </h6>
+                <a
+                  class="btn-sm btn-danger rounded-0"
+                  href="https:ldce.ac.in/news"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card rounded-0 border-0">
+              <img
+                src="img/NEWS.jpeg"
+                class="card-img-top rounded-0"
+                alt="news image"
+              />
+              <div class="card-body">
+                <p class="card-subtitle text-muted">16 des 2023</p>
+                <h6 class="card-title text-justify">
+                  Inauguration of upgraded Library Facilities on 15 December
+                  2023
+                </h6>
+                <a
+                  class="btn-sm btn-danger rounded-0"
+                  href="https:ldce.ac.in/news"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card rounded-0 border-0">
+              <img
+                src="img/NEWS.jpeg"
+                class="card-img-top rounded-0"
+                alt="news image"
+              />
+              <div class="card-body">
+                <p class="card-subtitle text-muted">16 des 2023</p>
+                <h6 class="card-title text-justify">
+                  Inauguration of upgraded Library Facilities on 15 December
+                  2023
+                </h6>
+                <a
+                  class="btn-sm btn-danger rounded-0"
+                  href="https:ldce.ac.in/news"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="events" id="event">
+      <div class="container">
+        <div class="row">
+          <div class="col d-inline-flex justify-content-start align-items-start gap-3">
+            <h1 class="title">EVENTS</h1>
+             <a
+                  class="btn-sm btn-danger"
+                  href="https:ldce.ac.in/news"
+                  >All Events</a
+                >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div
+              class="card  border-0"
+              onclick="location.href='https://www.facebook.com/ldce.ac.in/posts/pfbid0RjhrnjAvSAwcxjD3X4PBwXRZMTuzynRMFeCuvwc9mYMni9mekqf9oLcoEJrTEnCAl'"
+            >
+              <img
+                src="img/EVENT-IMG.jpg"
+                class="card-img-top"
+                alt="news image"
+              />
+              <div class="card-body">
+                <p class="card-subtitle text-muted">05 Apr 2024</p>
+                <h6 class="card-title text-justify">
+                 LDCE NSS and NCC in collaboration with CEE is organising Cycling Expedition 2024
+                </h6>
+              </div>
+            </div>
+          </div>
+             <div class="col">
+            <div
+              class="card border-0"
+              onclick="location.href='https://www.facebook.com/ldce.ac.in/posts/pfbid0RjhrnjAvSAwcxjD3X4PBwXRZMTuzynRMFeCuvwc9mYMni9mekqf9oLcoEJrTEnCAl'"
+            >
+              <img
+                src="img/EVENT-IMG.jpg"
+                class="card-img-top"
+                alt="news image"
+              />
+              <div class="card-body">
+                <p class="card-subtitle text-muted">05 Apr 2024</p>
+                <h6 class="card-title text-justify">
+                 LDCE NSS and NCC in collaboration with CEE is organising Cycling Expedition 2024
+                </h6>
+              </div>
+            </div>
+          </div>
+             <div class="col">
+            <div
+              class="card border-0"
+              onclick="location.href='https://www.facebook.com/ldce.ac.in/posts/pfbid0RjhrnjAvSAwcxjD3X4PBwXRZMTuzynRMFeCuvwc9mYMni9mekqf9oLcoEJrTEnCAl'"
+            >
+              <img
+                src="img/EVENT-IMG.jpg"
+                class="card-img-top"
+                alt="news image"
+              />
+              <div class="card-body">
+                <p class="card-subtitle text-muted">05 Apr 2024</p>
+                <h6 class="card-title text-justify">
+                 LDCE NSS and NCC in collaboration with CEE is organising Cycling Expedition 2024
+                </h6>
+              </div>
+            </div>
+          </div>
+             <div class="col">
+            <div
+              class="card  border-0"
+              onclick="location.href='https://www.facebook.com/ldce.ac.in/posts/pfbid0RjhrnjAvSAwcxjD3X4PBwXRZMTuzynRMFeCuvwc9mYMni9mekqf9oLcoEJrTEnCAl'"
+            >
+              <img
+                src="img/EVENT-IMG.jpg"
+                class="card-img-top"
+                alt="news image"
+              />
+              <div class="card-body">
+                <p class="card-subtitle text-muted">05 Apr 2024</p>
+                <h6 class="card-title text-justify">
+                 LDCE NSS and NCC in collaboration with CEE is organising Cycling Expedition 2024
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="placement-gallary" id="placement">
+      <div class="container">
+        <div class="row">
+          <div class="col-7">
+            <div class="placement">
+              <h1 class="title">PLACEMENTS</h1>
+              <ul>
+                <li>
+                  <img src="img/right-arrow.png" alt="arrow" />
+                  <a
+                    target="_blank"
+                    href="https://ldce.ac.in/upload/pdf/placement-cell/LDCE_TPO_BROUCHUR.pdf"
+                  >
+                    Placement Cell Brochure
+                  </a>
+                </li>
+                <li>
+                  <img src="img/right-arrow.png" alt="arrow" />
+                  <a
+                    target="_blank"
+                    href="https://ldce.ac.in/upload/pdf/placement-cell/placement_activities.pdf"
+                  >
+                    Placement Cell Activities
+                  </a>
+                </li>
+                <li>
+                  <img src="img/right-arrow.png" alt="arrow" />
+                  <a
+                    target="_blank"
+                    href="https://ldce.ac.in/upload/pdf/placement-cell/Facilities_For_Placement.pdf"
+                  >
+                    Facilities For Placement Drive-tpo at LDCE
+                  </a>
+                </li>
+              </ul>
+              <a
+                class="btn btn-danger rounded-0 more-btn"
+                target="_blank"
+                href="https://ldce.ac.in/placement-cell"
+              >
+                More <img src="img/back.png" alt="arrow" />
+              </a>
+            </div>
+          </div>
+          <div class="col-4 offset-1">
+            <div class="gallary">
+              <h1 class="title">GALLARY</h1>
+              <div class="gallary-box">
+                <img
+                  src="img/lalbhai.jpg"
+                  alt="img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal"
+                />
+                <img
+                  src="img/images (1).jpeg"
+                  alt="img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal2"
+                />
+                <img
+                  src="img/images (2).jpeg"
+                  alt="img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal3"
+                />
+              </div>
+              <div class="gallary-box">
+                <img
+                  src="img/History.jpg"
+                  alt="img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal"
+                />
+                <img
+                  src="img/history01.jpg"
+                  alt="img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal"
+                />
+                <img
+                  src="img/download (3).jpeg"
+                  alt="img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal"
+                />
+              </div>
+              <div class="gallary-box">
+                <img
+                  src="img/LDCE2.jpeg"
+                  alt="img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal"
+                />
+                <img
+                  src="img/LDCE3.jpeg"
+                  alt="img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal"
+                />
+                <img
+                  src="img/LDCE3.png"
+                  alt="img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal"
+                />
+              </div>
+              <div class="modal" id="modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <img src="img/lalbhai.jpg" alt="" />
+                    <button
+                      class="btn btn-danger rounded-0"
+                      data-bs-dismiss="modal"
+                    >
+                      close
+                    </button>
+                  </div>
+                </div>
+              </div>
+                        <div class="modal" id="modal2">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <img src="img/images (1).jpeg" alt="" />
+                    <button
+                      class="btn btn-danger rounded-0"
+                      data-bs-dismiss="modal"
+                    >
+                      close
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="modal" id="modal3">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <img src="img/images (2).jpeg" alt="" />
+                    <button
+                      class="btn btn-danger rounded-0"
+                      data-bs-dismiss="modal"
+                    >
+                      close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container mb-0">
+        <div class="row">
+          <div class="col">
+            <h5 class="link-title">Quick Links</h5>
+            <div class="links">
+              <a href="">CAMPUS MAP</a>
+              <a href="">USEFUL LINKS</a>
+              <a href="">HDFC ONLINE PAYMENT</a>
+              <a href="">STUDENT INDUCTION</a>
+              <a href="">PROGRAM</a>
+              <a href="">TEAM</a>
+              <a href="">AICTE FEEDBACK</a>
+            </div>
+          </div>
+          <div class="col">
+            <h5 class="link-title">About</h5>
+            <div class="links">
+              <a href="">History</a>
+              <a href="">ADMISSION PROCEDURE</a>
+              <a href="">DIRECTIONS</a>
+              <a href="">FEES & DESCRIPTION</a>
+              <a href="">COMMITIES</a>
+            </div>
+          </div>
+          <div class="col">
+            <h5 class="link-title">Important Info</h5>
+            <div class="links">
+              <a href="">RIGHT TO INFO. ACT</a>
+              <a href="">MOU</a>
+              <a href="">TEQIP</a>
+              <a href="">MANDATORY DISCLOSURE</a>
+              <a href="">TENDER NOTICE</a>
+            </div>
+          </div>
+          <div class="col">
             <p>
-              L. D. College of Engineering (LDCE), is a premier
-              government engineering institute in Gujarat set with the
-              objectives of imparting higher education, research and training
-              in various fields of engineering & technology.
+              L.D. College of Engineering Opp Gujarat University, Navrangpura,
+              Ahmedabad - 380015. GUJARAT INDIA
             </p>
-            <a class="btn-sm btn-danger rounded-0 read-more-btn" href="https://ldce.ac.in/about/institute"
-              target="_blank">
-              Read more
-            </a>
+            <p>
+              Phone No:079 2630 2887 <br />
+              Email:ldce-abad-dte@gujarat.gov.in
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            2024 © LDCE. All rights Reserved | Design by LDCE Team
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="acedemic-unit">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="title">ACEDEMIC UNITS</h1>
-        </div>
-      </div>
-      <div class="row d-flex justify-content-between gy-sm-0 gy-1">
-        <div class="col-md-3 col-sm-4 ac-units" onclick="location.href='https://ldce.ac.in/departments'">
-          <img src="img/department.png" alt="department" />
-          <h4>DEPARTMENTS</h4>
-        </div>
-        <div class="col-md-3 col-sm-4 ac-units" onclick="location.href='https://ldce.ac.in'">
-          <img src="img/cap.png" alt="excellence" />
-          <h4>CENTER OF EXCELLENCE</h4>
-        </div>
-        <div class="col-md-3 col-sm-4 ac-units" onclick="location.href='https://ldce.ac.in/achievements'">
-          <img src="img/medal.png" alt="ACHIVEMENTS" />
-          <h4>ACHIVEMENTS</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="latest-news" id="news">
-    <div class="container">
-      <div class="row">
-        <div class="col d-inline-flex justify-content-start align-items-start gap-3">
-          <h1 class="title">LATEST NEWS</h1>
-          <a class="btn-sm btn-danger" href="https:ldce.ac.in/news">All News</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="card rounded-0 border-0">
-            <img src="img/NEWS.jpeg" class="card-img-top rounded-0" alt="news image" />
-            <div class="card-body">
-              <p class="card-subtitle text-muted">16 des 2023</p>
-              <h6 class="card-title text-justify">
-                Inauguration of upgraded Library Facilities on 15 December
-                2023
-              </h6>
-              <a class="btn-sm btn-danger rounded-0" href="https:ldce.ac.in/news">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card rounded-0 border-0">
-            <img src="img/NEWS.jpeg" class="card-img-top rounded-0" alt="news image" />
-            <div class="card-body">
-              <p class="card-subtitle text-muted">16 des 2023</p>
-              <h6 class="card-title text-justify">
-                Inauguration of upgraded Library Facilities on 15 December
-                2023
-              </h6>
-              <a class="btn-sm btn-danger rounded-0" href="https:ldce.ac.in/news">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card rounded-0 border-0">
-            <img src="img/NEWS.jpeg" class="card-img-top rounded-0" alt="news image" />
-            <div class="card-body">
-              <p class="card-subtitle text-muted">16 des 2023</p>
-              <h6 class="card-title text-justify">
-                Inauguration of upgraded Library Facilities on 15 December
-                2023
-              </h6>
-              <a class="btn-sm btn-danger rounded-0" href="https:ldce.ac.in/news">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card rounded-0 border-0">
-            <img src="img/NEWS.jpeg" class="card-img-top rounded-0" alt="news image" />
-            <div class="card-body">
-              <p class="card-subtitle text-muted">16 des 2023</p>
-              <h6 class="card-title text-justify">
-                Inauguration of upgraded Library Facilities on 15 December
-                2023
-              </h6>
-              <a class="btn-sm btn-danger rounded-0" href="https:ldce.ac.in/news">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="events" id="event">
-    <div class="container">
-      <div class="row">
-        <div class="col d-inline-flex justify-content-start align-items-start gap-3">
-          <h1 class="title">EVENTS</h1>
-          <a class="btn-sm btn-danger" href="https:ldce.ac.in/news">All Events</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="card  border-0"
-            onclick="location.href='https://www.facebook.com/ldce.ac.in/posts/pfbid0RjhrnjAvSAwcxjD3X4PBwXRZMTuzynRMFeCuvwc9mYMni9mekqf9oLcoEJrTEnCAl'">
-            <img src="img/EVENT-IMG.jpg" class="card-img-top" alt="news image" />
-            <div class="card-body">
-              <p class="card-subtitle text-muted">05 Apr 2024</p>
-              <h6 class="card-title text-justify">
-                LDCE NSS and NCC in collaboration with CEE is organising Cycling Expedition 2024
-              </h6>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card border-0"
-            onclick="location.href='https://www.facebook.com/ldce.ac.in/posts/pfbid0RjhrnjAvSAwcxjD3X4PBwXRZMTuzynRMFeCuvwc9mYMni9mekqf9oLcoEJrTEnCAl'">
-            <img src="img/EVENT-IMG.jpg" class="card-img-top" alt="news image" />
-            <div class="card-body">
-              <p class="card-subtitle text-muted">05 Apr 2024</p>
-              <h6 class="card-title text-justify">
-                LDCE NSS and NCC in collaboration with CEE is organising Cycling Expedition 2024
-              </h6>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card border-0"
-            onclick="location.href='https://www.facebook.com/ldce.ac.in/posts/pfbid0RjhrnjAvSAwcxjD3X4PBwXRZMTuzynRMFeCuvwc9mYMni9mekqf9oLcoEJrTEnCAl'">
-            <img src="img/EVENT-IMG.jpg" class="card-img-top" alt="news image" />
-            <div class="card-body">
-              <p class="card-subtitle text-muted">05 Apr 2024</p>
-              <h6 class="card-title text-justify">
-                LDCE NSS and NCC in collaboration with CEE is organising Cycling Expedition 2024
-              </h6>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card  border-0"
-            onclick="location.href='https://www.facebook.com/ldce.ac.in/posts/pfbid0RjhrnjAvSAwcxjD3X4PBwXRZMTuzynRMFeCuvwc9mYMni9mekqf9oLcoEJrTEnCAl'">
-            <img src="img/EVENT-IMG.jpg" class="card-img-top" alt="news image" />
-            <div class="card-body">
-              <p class="card-subtitle text-muted">05 Apr 2024</p>
-              <h6 class="card-title text-justify">
-                LDCE NSS and NCC in collaboration with CEE is organising Cycling Expedition 2024
-              </h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="placement-gallary" id="placement">
-    <div class="container">
-      <div class="row">
-        <div class="col-7">
-          <div class="placement">
-            <h1 class="title">PLACEMENTS</h1>
-            <ul>
-              <li>
-                <img src="img/right-arrow.png" alt="arrow" />
-                <a target="_blank" href="https://ldce.ac.in/upload/pdf/placement-cell/LDCE_TPO_BROUCHUR.pdf">
-                  Placement Cell Brochure
-                </a>
-              </li>
-              <li>
-                <img src="img/right-arrow.png" alt="arrow" />
-                <a target="_blank" href="https://ldce.ac.in/upload/pdf/placement-cell/placement_activities.pdf">
-                  Placement Cell Activities
-                </a>
-              </li>
-              <li>
-                <img src="img/right-arrow.png" alt="arrow" />
-                <a target="_blank" href="https://ldce.ac.in/upload/pdf/placement-cell/Facilities_For_Placement.pdf">
-                  Facilities For Placement Drive-tpo at LDCE
-                </a>
-              </li>
-            </ul>
-            <a class="btn btn-danger rounded-0 more-btn" target="_blank" href="https://ldce.ac.in/placement-cell">
-              More <img src="img/back.png" alt="arrow" />
-            </a>
-          </div>
-        </div>
-        <div class="col-4 offset-1">
-          <div class="gallary">
-            <h1 class="title">GALLARY</h1>
-            <div class="gallary-box">
-              <img src="img/lalbhai.jpg" alt="img" data-bs-toggle="modal" data-bs-target="#modal" />
-              <img src="img/images (1).jpeg" alt="img" data-bs-toggle="modal" data-bs-target="#modal2" />
-              <img src="img/images (2).jpeg" alt="img" data-bs-toggle="modal" data-bs-target="#modal3" />
-            </div>
-            <div class="gallary-box">
-              <img src="img/History.jpg" alt="img" data-bs-toggle="modal" data-bs-target="#modal" />
-              <img src="img/history01.jpg" alt="img" data-bs-toggle="modal" data-bs-target="#modal" />
-              <img src="img/download (3).jpeg" alt="img" data-bs-toggle="modal" data-bs-target="#modal" />
-            </div>
-            <div class="gallary-box">
-              <img src="img/LDCE2.jpeg" alt="img" data-bs-toggle="modal" data-bs-target="#modal" />
-              <img src="img/LDCE3.jpeg" alt="img" data-bs-toggle="modal" data-bs-target="#modal" />
-              <img src="img/LDCE3.png" alt="img" data-bs-toggle="modal" data-bs-target="#modal" />
-            </div>
-            <div class="modal" id="modal">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <img src="img/lalbhai.jpg" alt="" />
-                  <button class="btn btn-danger rounded-0" data-bs-dismiss="modal">
-                    close
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="modal" id="modal2">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <img src="img/images (1).jpeg" alt="" />
-                  <button class="btn btn-danger rounded-0" data-bs-dismiss="modal">
-                    close
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="modal" id="modal3">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <img src="img/images (2).jpeg" alt="" />
-                  <button class="btn btn-danger rounded-0" data-bs-dismiss="modal">
-                    close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="container mb-0">
-      <div class="row">
-        <div class="col">
-          <h5 class="link-title">Quick Links</h5>
-          <div class="links">
-            <a href="">CAMPUS MAP</a>
-            <a href="">USEFUL LINKS</a>
-            <a href="">HDFC ONLINE PAYMENT</a>
-            <a href="">STUDENT INDUCTION</a>
-            <a href="">PROGRAM</a>
-            <a href="">TEAM</a>
-            <a href="">AICTE FEEDBACK</a>
-          </div>
-        </div>
-        <div class="col">
-          <h5 class="link-title">About</h5>
-          <div class="links">
-            <a href="">History</a>
-            <a href="">ADMISSION PROCEDURE</a>
-            <a href="">DIRECTIONS</a>
-            <a href="">FEES & DESCRIPTION</a>
-            <a href="">COMMITIES</a>
-          </div>
-        </div>
-        <div class="col">
-          <h5 class="link-title">Important Info</h5>
-          <div class="links">
-            <a href="">RIGHT TO INFO. ACT</a>
-            <a href="">MOU</a>
-            <a href="">TEQIP</a>
-            <a href="">MANDATORY DISCLOSURE</a>
-            <a href="">TENDER NOTICE</a>
-          </div>
-        </div>
-        <div class="col">
-          <p>
-            L.D. College of Engineering Opp Gujarat University, Navrangpura,
-            Ahmedabad - 380015. GUJARAT INDIA
-          </p>
-          <p>
-            Phone No:079 2630 2887 <br />
-            Email:ldce-abad-dte@gujarat.gov.in
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col text-center">
-          2024 © LDCE. All rights Reserved | Design by LDCE Team
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

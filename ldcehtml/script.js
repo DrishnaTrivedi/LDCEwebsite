@@ -15,24 +15,4 @@ function remove() {
     sidebar.style.left = "-250px";
   }
 }
-document.addEventListener('scroll',()=>{
-  const header=document.querySelector('header');
-  if(window.scrollY>100){
-    header.classList.add('scrolled');
-  }else{
-    header.classList.remove('scrolled');
-  }
-})
-
-let menulist=document.getElementById("menuList")
-menulist.style.maxHeight="355";
-function toggleMenu(){
-  if(menulist.style.maxHeight=="0px"){
-    menulist.style.maxHeight="355px"
-  }else{
-    toggle()
-  }
-}
-function toggle(){
-  menulist.style.maxHeight="0px";
-}
+document.getElementById("mrindia").addEventListener("click", remove);
