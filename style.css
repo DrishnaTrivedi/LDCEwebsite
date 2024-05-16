@@ -191,6 +191,9 @@ header.scrolled{
   font-weight: 600;
   margin-bottom: 22px;
 }
+.cen-title{
+  text-align: center;
+}
 
 .announcements li,
 .placement-gallary li {
@@ -201,8 +204,10 @@ header.scrolled{
   justify-content: flex-start;
   align-items: flex-start;
   text-align: justify;
-  border-bottom: 2px solid #c31111;
   font-weight: 500;
+}
+.placement-gallary li{
+  border-bottom: 2px solid #c31111;
 }
 
 .announcements li img,
