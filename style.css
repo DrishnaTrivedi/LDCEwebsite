@@ -384,7 +384,7 @@ header.scrolled {
 }
 
 .banner-card img {
-  width: 100%;
+  width: 101%;
   height: 500px;
   z-index: -1000;
   filter: blur(3px);
@@ -701,4 +701,9 @@ grid-template-columns: repeat(2 , 200px);
   width: fit-content;
   margin: 5px;
   border-radius: 0px 0px 15px 15px;
+}
+
+.spacearrow{
+  padding: 3px 10px;
+  margin: 0px 10px; 
 }
