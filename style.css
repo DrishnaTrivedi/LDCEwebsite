@@ -376,10 +376,12 @@ header.scrolled {
 
 .swiper-button-next {
   right: 0;
+  padding-left: 25px;
 }
 
 .swiper-button-prev {
   left: 0;
+  padding-right: 25px;
 }
 
 .swiper-pagination-bullet {
