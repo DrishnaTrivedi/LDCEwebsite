@@ -411,7 +411,7 @@ header.scrolled {
 }
 
 .banner-card img {
-  width: 100%;
+  width: 101%;
   height: 500px;
   z-index: -1000;
   filter: blur(3px);
