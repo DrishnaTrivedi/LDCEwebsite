@@ -454,6 +454,41 @@ section {
 .counter {
   text-align: center;
 }
+/*Gallery Styling Start*/
+
+.title {
+  text-align: center;
+  color: #c00d0d;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.main-image {
+  height: 470px;
+  width: 100%;
+  object-fit: cover;
+}
+.image-grid img {
+  width: 100%;
+  height: 219.5px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+.row {
+  margin-right: 0; /* Remove row margin */
+  margin-left: 0; /* Remove row margin */
+}
+.col-md-8,
+.col-md-4 {
+  padding-right: 0; /* Remove column padding */
+  padding-left: 0; /* Remove column padding */
+}
+
+/*Gallery Styling End*/
 
 .gallary-box {
   display: flex;
