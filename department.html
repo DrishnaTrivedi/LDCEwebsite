@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Engineering</title>
+    <link rel="shortcut icon" href="img/ldce-logo-png.png" type="image/x-icon" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jersey+25&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dept.css" />
+  <!-- Bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Sliderjs css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Bootstrap JS -->
+</head>
+<body>
+    <nav class="sidebar">
+        <!-- <div class="sidebar-toggle" onclick="toggleSidebar()"></div> -->
+        <!-- <div class="sidebar-icon">
+      <img src="./img/menu.png" alt="sidebar image" height="10%"  class="mrindia">
+    </div> -->
+        <!-- <i class="fas fa-bars"></i> -->
+
+        <div class="top-nav text-right">
+          <a href="https://study.gujarat.gov.in/Home/University">STUDY IN GUJARAT</a>
+          | <a href="http://grievance.ldce.ac.in/"> GRIEVANCE </a> |
+          <a href="https://ldce.ac.in/sitemap">SITEMAP</a> |
+          <a href="https://ldce.ac.in/student-section/notice-board">
+            STUDENT SECTION</a>
+          |
+          <a href="https://ldce.ac.in/contact">CONTACT</a>
+        </div>
+        <div class="mid-nav">
+          <div class="container mt-2 mb-2 pt-0 pb-0">
+            <div class="row">
+              <div class="col d-flex align-items-center justify-content-start gap-2">
+                <img src="img/ldce-logo-png.png" width="100px" alt="ldce-logo" id="ldce-logo" class="mrindia" />
+
+                <h3>L.D. College of Engineering</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-nav">
+          <div class="container mt-0 pt-0 pb-0">
+            <div class="row">
+              <div class="col">
+                <header>
+                  <div class="navbar-links">
+                    <ul id="menuList" class="d-flex justify-content-between align-items-center p-0 m-0 ">
+                      <div class="icon menubtn"><i class=" bar fa-solid fa-bars" onclick="toggleMenu()"></i></div>
+                      <li><a href="#" class="active">Home</a></li>
+                      <li class="dropbtn dropdown">
+                        <a href="https://ldce.ac.in/about/institute">About</a><span><img src="img/down.png"
+                            alt="" /></span>
+                        <div class="dropdown-content">
+                          <div class="sec1">
+                            <span id="intake">Intake and Admission</span> <br>
+                            <a href="#">BE admission and courses</a>
+                            <a href="#">PDDC Courses</a>
+                            <a href="#">PG admission and courses</a>
+                          </div>
+                          <div class="sec1">
+                            <span id="intake">Intake and Admission</span> <br>
+                            <a href="#">BE admission and courses</a>
+                            <a href="#">PDDC Courses</a>
+                            <a href="#">PG admission and courses</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropbtn dropdown">
+                        <a href="https://ldce.ac.in/admissions/academiccalender">Acedemics</a><span><img
+                            src="img/down.png" alt="" /></span>
+                        <div class="dropdown-content">
+                          <div class="sec1">
+                            <span id="intake">Intake and Admission</span> <br>
+                            <a href="#">BE admission and courses</a>
+                            <a href="#">PDDC Courses</a>
+                            <a href="#">PG admission and courses</a>
+                          </div>
+                          <div class="sec1">
+                            <span id="intake">Intake and Admission</span> <br>
+                            <a href="#">BE admission and courses</a>
+                            <a href="#">PDDC Courses</a>
+                            <a href="#">PG admission and courses</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropbtn dropdown">
+                        <a href="https://ldce.ac.in/departments">Departments</a><span><img src="img/down.png"
+                            alt="" /></span>
+                        <div class="dropdown-content">
+                          <div class="sec1">
+                            <span id="intake">Intake and Admission</span> <br>
+                            <a href="#">BE admission and courses</a>
+                            <a href="#">PDDC Courses</a>
+                            <a href="#">PG admission and courses</a>
+                          </div>
+                          <div class="sec1">
+                            <span id="intake">Intake and Admission</span> <br>
+                            <a href="#">BE admission and courses</a>
+                            <a href="#">PDDC Courses</a>
+                            <a href="#">PG admission and courses</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropbtn dropdown">
+                        <a href="https://ldce.ac.in/campus-life">Campus Life</a><span><img src="img/down.png"
+                            alt="" /></span>
+                        <div class="dropdown-content">
+                          <div class="sec1">
+                            <span id="intake">Intake and Admission</span> <br>
+                            <a href="#">BE admission and courses</a>
+                            <a href="#">PDDC Courses</a>
+                            <a href="#">PG admission and courses</a>
+                          </div>
+                          <div class="sec1">
+                            <span id="intake">Intake and Admission</span> <br>
+                            <a href="#">BE admission and courses</a>
+                            <a href="#">PDDC Courses</a>
+                            <a href="#">PG admission and courses</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="https://ldce.ac.in/placement-cell">Placements</a>
+                      </li>
+                      <li>
+                        <a href="https://ldce.ac.in/circular">Circular</a>
+                      </li>
+                      <li>
+                        <a href="https://ldce.ac.in">More<span><img src="img/down.png" alt="" /></span></a>
+                      </li>
+                    </ul>
+                </header>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+        
+      <div class="heading">
+        <img class="logo" src="https://ldce.ac.in/upload/logo/departments/computer-engineering-logo.png" alt="">
+        <h3>Department of Computer Engineering(NBA Accredited- 2023-26)</h3>
+    </div>
+
+    <div class="gridImgs">
+        <div class="gridEl">
+            
+            <img src=" https://ldce.ac.in/gallery/3/minislider/computer-engineering-lhT5iEYVtU.jpg" alt="">  
+
+        </div>
+        <div class="gridEl1">
+            
+            <img src="https://ldce.ac.in/gallery/3/minislider/computer-engineering-86tXYb1jad.JPG" alt="">  
+
+        </div>
+        <div class="gridEl2">
+            
+            <img src="https://ldce.ac.in/gallery/3/minislider/computer-engineering-a8IxdPd41x.jpg" alt="">  
+
+        </div>
+        <div class="gridEl3">
+            
+            <img src="https://ldce.ac.in/gallery/3/minislider/computer-engineering-dcLbyBMIRA.JPG" alt="">  
+
+        </div>
+        <div class="gridEl4">
+            
+            <img src="https://images.collegedunia.com/public/college_data/images/appImage/14064_LGCE_APP.jpg?h=250&w=1000&mode=crop" alt="">  
+
+        </div>
+    </div>
+<script src="dept.js"></script>
+</body>
+
+
+</html>
