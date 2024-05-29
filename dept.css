@@ -20,7 +20,7 @@ h3{
     gap:20px;
     display: flex;
     position: absolute;
-    top:220px;
+    top:200px;
     justify-content: center;
     align-items: center;
     left:15%;
@@ -32,8 +32,8 @@ h3{
    
     grid-template-rows: repeat(2,200px);
    position: absolute;
-   top:400px;
-   left: 10%;
+   top:250px;
+   left: 5%;
    padding-bottom: 60px;
    column-gap: 20px;
    justify-content: center;
@@ -116,3 +116,24 @@ cursor: pointer;
         bottom: 90px;
         cursor: pointer;
         }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr; /* One column */
+            grid-template-rows: repeat(12, auto); /* 12 rows */
+          }
+          
+          .grid-item {
+            padding: 10px;
+            /* border: 1px solid #ccc; */
+            cursor: pointer;
+          }
+          
+          .grid-item:hover {
+            background-color: #0b3558;
+            color: white;
+          }
+.text{
+    position: absolute;
+    top:650px;
+    width:100%;
+}
