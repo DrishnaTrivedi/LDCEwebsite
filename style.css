@@ -565,7 +565,18 @@ section {
 .menubtn {
   display: none;
 }
-
+.responsive1{
+  display: flex;
+  flex-direction: none;
+}
+.responsive2{
+  display: flex;
+  flex-direction: none;
+}
+.responsive3{
+  display: flex;
+  flex-direction: none;
+}
 /* Default styles for navigation bar */
 /* Add your existing styles here */
 
@@ -579,7 +590,24 @@ section {
     top: 1;
     right: 0;
   }
-
+  .responsive1{
+    /* display: flex; */
+    flex-direction: row;
+  }
+  .responsive2{
+    /* display: flex; */
+    flex-direction: row;
+  }
+  .responsive3{
+    /* display: flex; */
+    flex-direction: row;
+  }
+  h3{
+    margin-left: 15px;
+  }
+  #ldce-logo{
+    margin-left: 200%;
+  }
   .navbar-links li a {
     padding: 0px;
   }
@@ -594,7 +622,7 @@ section {
     right: 0;
     background: black;
     opacity: 0.75;
-    height: 55vh;
+    height: 35vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -603,6 +631,7 @@ section {
 
   .navbar-links ul li a {
     color: white;
+    margin: 5px;
   }
 }
 
